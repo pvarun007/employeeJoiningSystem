@@ -1,0 +1,27 @@
+
+Integration Use-cases for mini project
+======================================
+
+Key Note: 
+	- Build end to end solution for either one of the use-case
+	- Use the required Azure Integration Services to achieve the whole implementation
+	- Define your own schema
+	- Build a reliable solution with the required exception handling
+
+1. Order Processing Service - Expose the Order Processing Integration Interface as REST API. On receival of any order (in XML format), validate the message, transform the message to JSON format. Retreive the internal product ID maintained as part of separate stateless service, and include that as part of transformed message. Publish the transfer message to a topic for the consumer system to process. Return proper response code based on the status of the execution
+
+
+2. Define an Integration solution to on-board new employees with the set of repetitive tasks. As part of on-boarding other company emplyees due to merging define the below steps
+	1. Lst of employee details as csv file in Stroage acc
+	2. Trigger the process when the file is placed
+	3. Transform the message to JSON format
+	4. Send out welcome mail by following standard template
+	5. Add the employee in a table. Storage tables can be used
+	6. Publish an event to to Service Bus for each employee
+	7. In addition to bulk loading, expose Rest API to on-board new employee as a service for synchronous calls
+
+	
+Output: 
+	Demo of the end the end working solution build on Azure Integration Services
+	
+	On completion, please contact "Senthil (emp id: 469358)" to demo the developed solution 
